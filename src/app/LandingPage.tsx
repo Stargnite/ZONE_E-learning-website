@@ -9,6 +9,7 @@ import Reviews from "./components/Reviews";
 import Updates from "./components/Updates";
 import AppDownload from "./components/AppDownload"
 import RegisterDiscount from "./components/RegisterDiscount";
+import Footer from "./components/Footer";
 
 const LandingPage = () => {
   return (
@@ -24,6 +25,7 @@ const LandingPage = () => {
       <Updates />
       <AppDownload />
       <RegisterDiscount />
+      <Footer />
     </div>
   );
 };
