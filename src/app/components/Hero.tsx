@@ -4,9 +4,9 @@ import Playicon from "@/images/Playicon.svg";
 
 const Hero = () => {
   return (
-    <div className="md:flex justify-between px-20 p-10">
+    <div className="md:flex justify-between px-5 md:px-20 p-10">
       <div className="items-center">
-        <div className="text-3xl  md:text-5xl text-center md:pt-16 text-gray-900 align-center font-bold md:text-start md:max-w-sm leading-tight">
+        <div className="text-2xl  md:text-5xl text-center md:pt-16 text-gray-900 align-center font-bold md:text-start md:max-w-sm leading-tight">
           Free <span className="text-gray-400">Online</span>{" "}
           <span className="underline text-primary">Courses</span> From The
           Experts

@@ -3,7 +3,7 @@ import TypingPic from "@/images/typing.png";
 
 const WhyCourse = () => {
   return (
-    <div className="py-24 px-20">
+    <div className="py-24 px-5 md:px-20">
       <div className="text-primary text-xl">Nullam accumsan lorem in dui.</div>
       <div className="flex mt-10 items-center">
         <div

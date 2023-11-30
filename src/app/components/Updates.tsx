@@ -28,7 +28,7 @@ const Updates = () => {
           <Image
             src={Img1}
             alt=""
-            className="w-32 h-32 md:w-auto md:h-auto rounded-2xl md:pb-5"
+            className="w-20 h-20 md:w-auto md:h-auto rounded-2xl md:pb-5"
           />
           <div className="flex px-3 items-center md:items-start">
             <div className="date text-center pr-10 mt-1 hidden md:block">
@@ -67,7 +67,7 @@ const Updates = () => {
           <Image
             src={Img1}
             alt=""
-            className="w-32 h-32 md:w-auto md:h-auto rounded-2xl md:pb-5"
+            className="w-20 h-20 md:w-auto md:h-auto rounded-2xl md:pb-5"
           />
           <div className="flex px-3 items-center md:items-start">
             <div className="date text-center pr-10 mt-1 hidden md:block">
@@ -106,7 +106,7 @@ const Updates = () => {
           <Image
             src={Img1}
             alt=""
-            className="w-32 h-32 md:w-auto md:h-auto rounded-2xl md:pb-5"
+            className="w-20 h-20 md:w-auto md:h-auto rounded-2xl md:pb-5"
           />
           <div className="flex px-3 items-center md:items-start">
             <div className="date text-center pr-10 mt-1 hidden md:block">
