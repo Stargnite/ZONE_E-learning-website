@@ -6,10 +6,20 @@ import Heroku from "@/images/Heroku.svg";
 import Vimeo from "@/images/Vimeo.svg";
 import Airbnb from "@/images/Airbnb.svg";
 
+
+import { Barlow } from "next/font/google";
+
+const barlow = Barlow({
+  weight: '700',
+  subsets: ['latin'],
+  display: 'swap'
+})
+
+
 const OurClients = () => {
   return (
     <div className="text-center">
-      <h1 className=" text-2xl md:text-5xl font-bold text-gray-900 my-5 md:my-10">
+      <h1 className={`text-2xl md:text-5xl font-extrabold text-gray-900 my-5 md:my-10 ${barlow.className}`}>
         We Work With
       </h1>
       <p className="text-gray-400 text-sm md:text-xl">

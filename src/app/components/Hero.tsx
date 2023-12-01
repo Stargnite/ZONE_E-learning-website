@@ -2,11 +2,19 @@ import Image from "next/image";
 import HeroImg from "@/images/HeroImage.svg";
 import Playicon from "@/images/Playicon.svg";
 
+import { Barlow } from 'next/font/google'
+ 
+const barlow = Barlow({
+  weight: '700',
+  subsets: ['latin'],
+  display: 'swap',
+})
+
 const Hero = () => {
   return (
     <div className="md:flex justify-between px-5 md:px-20 p-10">
       <div className="items-center">
-        <div className="text-2xl  md:text-5xl text-center md:pt-16 text-gray-900 align-center font-bold md:text-start md:max-w-sm leading-tight">
+        <div className={`text-2xl  md:text-5xl text-center md:pt-16 text-gray-900 align-center font-bold md:text-start md:max-w-sm leading-tight ${barlow.className}`}>
           Free <span className="text-gray-400">Online</span>{" "}
           <span className="underline text-primary">Courses</span> From The
           Experts
@@ -25,15 +33,15 @@ const Hero = () => {
 
         <div className="flex mt-10 justify-between text-center md:text-start">
           <div className="mr-5">
-            <h1 className="font-bold text-sm md:text-2xl text-gray-800">14k+</h1>
+            <h1 className={`font-bold text-sm md:text-2xl text-gray-800 ${barlow.className}`}>14k+</h1>
             <p className="text-gray-400 md:text-base text-xs">Learners</p>
           </div>
           <div className="mr-5">
-            <h1 className="font-bold text-sm md:text-2xl text-gray-800">1,05k+</h1>
+            <h1 className={`font-bold text-sm md:text-2xl text-gray-800 ${barlow.className}`}>1,05k+</h1>
             <p className="text-gray-400 md:text-base text-xs">Courses</p>
           </div>
           <div className="">
-            <h1 className="font-bold text-sm md:text-2xl text-gray-800">59k+</h1>
+            <h1 className={`font-bold text-sm md:text-2xl text-gray-800 ${barlow.className}`}>59k+</h1>
             <p className="text-gray-400 md:text-base text-xs">Graduates</p>
           </div>
         </div>

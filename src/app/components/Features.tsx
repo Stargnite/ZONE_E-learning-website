@@ -7,11 +7,20 @@ import ProfilePic from "@/images/profilePic.png";
 import ClockIcon from "@/images/ClockIcon.svg";
 import LevelIcon from "@/images/LevelIcon.svg";
 
+import { Barlow } from "next/font/google";
+
+const barlow = Barlow({
+  weight: '800',
+  subsets: ['latin'],
+  display: 'swap',
+})
+
+
 const Features = () => {
   return (
     <div className=" md:mx-24 my-10">
       <div className=" text-center ">
-        <div className="text-2xl md:text-3xl text-gray-800 font-bold mb-7">
+        <div className={`text-2xl md:text-4xl text-gray-800 font-extrabold mb-7 ${barlow.className}`}>
           Featured Courses
         </div>
         <div className="mb-16">
@@ -30,9 +39,9 @@ const Features = () => {
         <div className="card overflow-hidden w-60 md:w-80 shadow md:self-start ml-10 md:ml-0  pb-5 mb-5">
           <Image src={Img1} alt="" className="rounded-t-2xl pb-5" />
           <div className="px-3">
-            <div className="flex justify-between items-center">
+            <div className="flex justify-between items-center font-bold">
               <h4 className="text-primary text-xs md:text-sm">MANAGMENT</h4>
-              <div className="price font-bold text-lg md:text-xl">$39</div>
+              <div className="price text-lg md:text-xl">$39</div>
             </div>
             <h2 className="font-bold mt-6">
               Don&apos;t Waste Time! 7 Facts Until You Reach Your Event
@@ -73,9 +82,9 @@ const Features = () => {
         <div className="card overflow-hidden w-80 shadow pb-5 mb-5 hidden md:block">
           <Image src={Img2} alt="" className="rounded-t-2xl pb-5" />
           <div className="px-3">
-            <div className="flex justify-between items-center">
+            <div className="flex justify-between items-center font-bold">
               <h4 className="text-primary text-sm">MANAGMENT</h4>
-              <div className="price font-bold text-xl">$99</div>
+              <div className="price text-xl">$99</div>
             </div>
             <h2 className="font-bold mt-6">
               The 7 Most Successful Event Companies In Region{" "}
@@ -115,9 +124,9 @@ const Features = () => {
         <div className="card overflow-hidden w-80 shadow pb-5 mb-5 hidden xl:block">
           <Image src={Img3} alt="" className="rounded-t-2xl pb-5" />
           <div className="px-3">
-            <div className="flex justify-between items-center">
+            <div className="flex justify-between items-center font-bold">
               <h4 className="text-primary text-sm">MANAGMENT</h4>
-              <div className="price font-bold text-xl">$59</div>
+              <div className="price text-xl">$59</div>
             </div>
             <h2 className="font-bold mt-6">
               Think Your Event Is Safe? 7 Ways You Can Lose It Today

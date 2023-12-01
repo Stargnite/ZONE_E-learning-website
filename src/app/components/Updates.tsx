@@ -7,15 +7,24 @@ import ProfilePic from "@/images/profilePic.png";
 import ClockIcon from "@/images/ClockIcon.svg";
 import LevelIcon from "@/images/LevelIcon.svg";
 
+import { Barlow } from 'next/font/google'
+ 
+const barlow = Barlow({
+  weight: '700',
+  subsets: ['latin'],
+  display: 'swap',
+})
+
+
 const Updates = () => {
   return (
     <div className="md:mx-24 my-10">
       <div className="md:flex px-10 md:px-0 justify-between items-center mb-20">
-        <div className="text-2xl text-center  md:text-3xl text-gray-800 font-bold">
+        <div className={`text-2xl text-center  md:text-3xl text-gray-800 font-bold ${barlow.className}`}>
           Latest Posts
         </div>
 
-        <div className="flex items-center hidden md:block">
+        <div className="md:flex items-center hidden">
           <div className="">View All</div>
         </div>
       </div>
@@ -76,7 +85,7 @@ const Updates = () => {
             </div>
             <div className="">
               <h1 className="font-bold mb-3 text-md md:text-lg">
-                The 7 Best Things About Event
+              Event Is Your Worst Enemy. 7 Ways To Defeat.
               </h1>
               <p className="text-gray-500 text-sm mb-3 hidden md:block">
                 Moment in the life of any aspiring astronomer of that it is time
@@ -115,7 +124,7 @@ const Updates = () => {
             </div>
             <div className="">
               <h1 className="font-bold mb-3 text-md md:text-lg">
-                The 7 Best Things About Event
+              Thinking About Event? 7 Reasons Why It
               </h1>
               <p className="text-gray-500 text-sm mb-3 hidden md:block">
                 Moment in the life of any aspiring astronomer of that it is time

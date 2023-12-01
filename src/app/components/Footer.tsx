@@ -6,7 +6,7 @@ const Footer = () => {
     <div className="pt-40 pb-5 px-10">
       <div className="flex flex-col md:flex-row justify-center md:justify-between items-center  mb-16">
         <div className="max-w-xs flex flex-col items-center md:items-start">
-          <Image src={Logo} alt="" className="mb-7 self-center" />
+          <Image src={Logo} alt="" className="mb-7 self-center md:self-start" />
           <p className="text-gray-500 mb-5 text-center md:text-start">
             The starting point for your next project based on easy-to-customize
             Material-UI © helps you build apps faster and better.

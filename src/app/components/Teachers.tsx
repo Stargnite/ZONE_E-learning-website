@@ -4,11 +4,20 @@ import Teacher3 from "@/images/teacher3.png";
 import Teacher4 from "@/images/teacher4.png";
 import Image from "next/image";
 
+import { Barlow } from 'next/font/google'
+ 
+const barlow = Barlow({
+  weight: '700',
+  subsets: ['latin'],
+  display: 'swap',
+})
+
+
 const Teachers = () => {
   return (
     <div className="pt-16 my-10 px-4 nd:px-24">
       <div className="text-center mb-28">
-        <h1 className="font-extrabold text-gray-900 text-2xl md:text-3xl mb-5">
+        <h1 className={`font-extrabold text-gray-900 text-2xl md:text-3xl mb-5 ${barlow.className}`}>
           Meet Our Teachers
         </h1>
         <p className="text-gray-400 px-2 lg:px-96">

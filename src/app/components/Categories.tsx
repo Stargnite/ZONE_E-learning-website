@@ -1,9 +1,17 @@
+import { Barlow } from 'next/font/google'
+ 
+const barlow = Barlow({
+  weight: '700',
+  subsets: ['latin'],
+  display: 'swap',
+})
+
 const Categories = () => {
   return (
     <div className="flex flex-col md:flex-row justify-between px-7 md:px-24 py-14 my-10 bg-slate-100">
       <div className="md:pr-5 flex flex-col items-center md:items-start md:text-start text-center">
-        <h1 className="text-3xl md:text-4xl font-extrabold text-gray-900 mb-8">
-          Featured <br className="hidden md:block" /> Category
+        <h1 className={`text-3xl md:text-4xl font-extrabold text-gray-900 mb-8 ${barlow.className}`}>
+          Featured <br className="hidden md:block font-extrabold" /> Category
         </h1>
         <p className="w-80 text-gray-600 px-3">
           Since wire-frame renderings are relatively simple and fast to

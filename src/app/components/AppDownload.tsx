@@ -5,11 +5,20 @@ import mobileApp from "@/images/mobileApp.svg";
 import AppleStoreBtn from "@/images/AppleStoreBtn.svg";
 import GoogleStoreBtn from "@/images/GoogleStoreBtn.svg";
 
+import { Barlow } from 'next/font/google'
+ 
+const barlow = Barlow({
+  weight: '700',
+  subsets: ['latin'],
+  display: 'swap',
+})
+
+
 const AppDownload = () => {
   return (
     <div className="flex flex-col md:flex-row justify-between px-7 py-7 md:px-24 md:py-24">
       <div className="md:text-start text-center w-full md:w-6/12 mb-7 md:mb-0">
-        <h1 className="text-2xl md:text-3xl font-extrabold mb-7 text-gray-900">
+        <h1 className={`text-2xl md:text-3xl font-extrabold mb-7 text-gray-900 ${barlow.className}`}>
           Download App
         </h1>
         <p className="text-gray-500 md:pr-24 mb-16">

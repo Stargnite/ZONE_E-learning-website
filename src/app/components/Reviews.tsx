@@ -3,10 +3,19 @@ import Image from "next/image";
 import ProfilePic from "@/images/profilePic.png"
 import HighlightedProfilePic from "@/images/highlightedProfile.png"
 
+import { Barlow } from 'next/font/google'
+ 
+const barlow = Barlow({
+  weight: '700',
+  subsets: ['latin'],
+  display: 'swap',
+})
+
+
 const Reviews = () => {
   return (
     <div className="px-7 md:px-24 py-24 bg-gray-200">
-      <h1 className="text-center font-extrabold text-gray-900 text-xl md:text-3xl">
+      <h1 className={`text-center font-extrabold text-gray-900 text-xl md:text-3xl ${barlow.className}`}>
         What Our Students Say
       </h1>
       <div className="flex my-6 md:my-12 items-center justify-center">
