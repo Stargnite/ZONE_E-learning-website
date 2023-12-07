@@ -1,3 +1,5 @@
+"use client"
+
 import Navbar from "./components/navbar";
 import Hero from "./components/Hero";
 import OurClients from "./components/OurClients";
@@ -10,10 +12,13 @@ import Updates from "./components/Updates";
 import AppDownload from "./components/AppDownload"
 import RegisterDiscount from "./components/RegisterDiscount";
 import Footer from "./components/Footer";
+import { useDarkMode } from "./ContextProvider";
 
 const LandingPage = () => {
+  const {isDarkMode, toggleDarkMode} = useDarkMode()
+
   return (
-    <div>
+    <div className={isDarkMode ? "bg-gray-900" : ""}>
       <Navbar />
       <Hero />
       <OurClients />
