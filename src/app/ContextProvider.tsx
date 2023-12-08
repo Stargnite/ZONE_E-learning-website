@@ -1,14 +1,18 @@
 "use client"
-import { createContext, useContext, useState } from 'react';
+import { createContext, useContext, useState, ReactNode } from 'react';
 
 interface DarkModeContextData {
  isDarkMode: boolean;
  toggleDarkMode: () => void;
 }
 
-const DarkModeContext = createContext<DarkModeContextData>({} as DarkModeContextData);
+const DarkModeContext = createContext<DarkModeContextData | undefined>(undefined);
 
-export const DarkModeProvider: React.FC = ({ children }) => {
+interface DarkModeProviderProps {
+   children: ReactNode;
+ }
+
+export const DarkModeProvider: React.FC<DarkModeProviderProps> = ({ children }) => {
  const [isDarkMode, setIsDarkMode] = useState(false);
 
  const toggleDarkMode = () => {
